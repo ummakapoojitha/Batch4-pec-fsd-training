@@ -1,0 +1,123 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Expense Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>💰 Personal Expense Calculator</h1>
+        <p>Track and manage your daily expenses</p>
+    </header>
+
+
+    <!-- Main Container -->
+    <main>
+
+        <!-- Add Expense -->
+        <section class="expense-form">
+
+            <h2>Add Expense</h2>
+
+            <form id="expenseForm">
+
+                <input
+                    type="text"
+                    id="expenseName"
+                    placeholder="Expense Name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="expenseAmount"
+                    placeholder="Amount"
+                    min="1"
+                    required
+                >
+
+                <select id="expenseCategory" required>
+
+                    <option value="">Select Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Education">Education</option>
+                    <option value="Other">Other</option>
+
+                </select>
+
+                <button type="submit">
+                    Add Expense
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Summary -->
+        <section class="summary">
+
+            <h2>Expense Summary</h2>
+
+            <div class="summary-container">
+
+                <div class="summary-card">
+                    <h3>Total Expenses</h3>
+                    <p id="totalExpense">₹0</p>
+                </div>
+
+                <div class="summary-card">
+                    <h3>Number of Expenses</h3>
+                    <p id="expenseCount">0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Expense List -->
+        <section class="expense-list">
+
+            <h2>Expense List</h2>
+
+            <div id="expenseItems">
+                <p id="emptyMessage">
+                    No expenses added yet.
+                </p>
+            </div>
+
+            <button
+                id="clearButton"
+                class="clear-btn"
+            >
+                Clear All
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Personal Expense Calculator</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```

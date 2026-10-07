@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+
+    text-align: center;
+}
+
+h1 {
+    color: white;
+
+    margin-bottom: 25px;
+
+    font-size: 32px;
+}
+
+.search-box {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.search-box button {
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #444;
+}
+
+.weather-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card h2 {
+    font-size: 28px;
+
+    color: #333;
+
+    margin-bottom: 10px;
+}
+
+#weatherIcon {
+    width: 120px;
+
+    height: 120px;
+}
+
+#temperature {
+    font-size: 45px;
+
+    color: #222;
+
+    margin: 5px 0;
+}
+
+#description {
+    font-size: 20px;
+
+    color: #555;
+
+    text-transform: capitalize;
+
+    margin-bottom: 25px;
+}
+
+.details {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.detail {
+    width: 45%;
+
+    padding: 20px;
+
+    background: #f2f7ff;
+
+    border-radius: 15px;
+}
+
+.detail span {
+    font-size: 30px;
+}
+
+.detail h4 {
+    margin: 10px 0;
+
+    color: #444;
+}
+
+.detail p {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #222;
+}
+
+#errorMessage {
+    color: white;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .details {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .detail {
+        width: 100%;
+    }
+}

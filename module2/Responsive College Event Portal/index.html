@@ -1,0 +1,191 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Event Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <h2>College Events</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to Our College Event Portal</h1>
+
+            <p>
+                Discover exciting college events, workshops,
+                competitions and cultural programs.
+            </p>
+
+            <a href="#events" class="btn">
+                Explore Events
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Events Section -->
+    <section id="events">
+
+        <h2>Upcoming Events</h2>
+
+        <div class="event-container">
+
+            <div class="event-card">
+
+                <h3>Tech Fest 2026</h3>
+
+                <p>
+                    Explore technology, coding competitions
+                    and innovative projects.
+                </p>
+
+                <p><strong>Date:</strong> October 15, 2026</p>
+
+                <p><strong>Venue:</strong> Main Auditorium</p>
+
+                <button onclick="registerEvent('Tech Fest 2026')">
+                    Register
+                </button>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <h3>Cultural Fest</h3>
+
+                <p>
+                    Enjoy music, dance, drama and
+                    exciting cultural performances.
+                </p>
+
+                <p><strong>Date:</strong> October 20, 2026</p>
+
+                <p><strong>Venue:</strong> College Ground</p>
+
+                <button onclick="registerEvent('Cultural Fest')">
+                    Register
+                </button>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <h3>Sports Meet</h3>
+
+                <p>
+                    Participate in various indoor and
+                    outdoor sports competitions.
+                </p>
+
+                <p><strong>Date:</strong> October 25, 2026</p>
+
+                <p><strong>Venue:</strong> Sports Ground</p>
+
+                <button onclick="registerEvent('Sports Meet')">
+                    Register
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Our Portal</h2>
+
+        <p>
+            The College Event Portal helps students discover
+            upcoming events and register easily.
+            It provides information about technical events,
+            cultural programs, workshops and sports activities.
+        </p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+        <p id="formMessage"></p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 College Event Portal | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
